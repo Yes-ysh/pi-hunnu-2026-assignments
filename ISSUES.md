@@ -16,7 +16,7 @@
 
 **正文**
 
-```markdown
+````markdown
 ## 实践课1：Pi Agent 安装与使用
 
 - 个人报告：https://github.com/Yes-ysh/pi-hunnu-2026-assignments/blob/main/practice/practice-01.md
@@ -41,7 +41,7 @@
 - 报告中未包含任何 API Key / `auth.json` 内容。
 
 运行证据见仓库 `evidence/09`–`evidence/13`。
-```
+````
 
 ---
 
@@ -55,7 +55,7 @@
 
 **正文**
 
-```markdown
+````markdown
 ## 实践课2：组织建仓与源码分析
 
 - 个人报告：https://github.com/Yes-ysh/pi-hunnu-2026-assignments/blob/main/practice/practice-02.md
@@ -81,7 +81,7 @@
 - `ai` 包的 build 会写回源码树（`src/models.generated.ts`、`src/providers/data/`），不只写 `dist`
 - `tui`/`env` 的原生部分由独立脚本构建，不在 `npm run build` 内
 - 根 build 不做类型检查；`npm run check` 才做，且其 `paths` 指向 `src`，与 build 指向 `dist` 相反
-```
+````
 
 ---
 
@@ -95,7 +95,7 @@
 
 **正文**
 
-```markdown
+````markdown
 ## 实践课3：Pi Agent 源码安装与编译
 
 - 个人报告：https://github.com/Yes-ysh/pi-hunnu-2026-assignments/blob/main/practice/practice-03.md
@@ -128,7 +128,7 @@ git      2.56.1.windows.1
 第 5 条是本次最值得记录的一条：报错出现在 `coding-agent` 的 workspace 位置，看起来像该包编译失败，实际是打包工具的子进程权限问题，源码无误。报告里按"编译错误 / 工具进程错误 / 环境缺失"三层做了辨析。
 
 运行证据见仓库 `evidence/01`、`evidence/02`、`evidence/08`。
-```
+````
 
 ---
 
@@ -142,7 +142,7 @@ git      2.56.1.windows.1
 
 **正文**
 
-```markdown
+````markdown
 ## 实践课4：Pi Agent 的模型调用与运行流程
 
 - 个人报告：https://github.com/Yes-ysh/pi-hunnu-2026-assignments/blob/main/practice/practice-04.md
@@ -185,7 +185,7 @@ git      2.56.1.windows.1
 - **下一轮多带了什么**：多带一条 toolResult 消息（文件正文），由 `currentContext.messages.push(result)` 写入，下一轮连同上文一起发给模型。
 
 报告 3.5 节附简图，标出 coding-agent、agent、ai 与远程模型服务的边界：文件系统只在 `coding-agent` 的工具里被访问，远程服务只收到工具返回的文本。
-```
+````
 
 ---
 
@@ -199,7 +199,7 @@ git      2.56.1.windows.1
 
 **正文**
 
-```markdown
+````markdown
 ## 实践课5：Pi Agent 工具调用与会话恢复
 
 - 个人报告：https://github.com/Yes-ysh/pi-hunnu-2026-assignments/blob/main/practice/practice-05.md
@@ -234,7 +234,7 @@ git      2.56.1.windows.1
 关键结论：`/new` 不是清空同一个 `Agent` 的历史，而是**替换会话**——新建空的 `SessionManager`、中止并 dispose 旧会话、再建全新 `AgentSession`/`Agent`。代码里 `Agent.reset()` 虽然存在，但 `packages/coding-agent/src` 下没有任何引用。
 
 运行证据见仓库 `evidence/05`–`evidence/07`。
-```
+````
 
 ---
 
@@ -245,3 +245,4 @@ git      2.56.1.windows.1
 - [ ] 报告里没有 API Key、`auth.json` 内容、授权回调地址
 - [ ] 图片链接能正常显示（本仓库报告用 Mermaid 图源，GitHub 原生渲染）
 - [ ] 每条 Issue 都在课程仓库 `hunnuOpenSourceSoftware2026/assignments` 下提交
+
