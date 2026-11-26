@@ -1,7 +1,7 @@
 # 实践课1：Pi Agent 安装与使用
 
-**姓名拼音：** （待填）
-**学号：** （待填）
+**姓名拼音：** yangsihui
+**学号：** 202430224005
 **小组组织：** https://github.com/aaa-course-project
 
 ---

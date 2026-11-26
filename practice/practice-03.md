@@ -1,7 +1,7 @@
 # 实践课3：Pi Agent 源码安装与编译
 
-**姓名拼音：** （待填）
-**学号：** （待填）
+**姓名拼音：** yangsihui
+**学号：** 202430224005
 **小组仓库：** https://github.com/aaa-course-project/pi-hunnu-2026
 **提交 commit：** `c3cc91632d0a1950fb122605b190233f2aa0006e`
 

@@ -1,7 +1,7 @@
 # 实践课4：Pi Agent 的模型调用与运行流程
 
-**姓名拼音：** （待填）
-**学号：** （待填）
+**姓名拼音：** yangsihui
+**学号：** 202430224005
 **小组仓库：** https://github.com/aaa-course-project/pi-hunnu-2026
 **提交 commit：** `c3cc91632d0a1950fb122605b190233f2aa0006e`（本地在其上修改，未提交回小组仓库）
 

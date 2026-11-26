@@ -1,8 +1,8 @@
 # 湖南师范大学 2026《系统分析与设计》实践课作业
 
-**姓名拼音：** （待填）
-**学号：** （待填）
-**班级：** 24 级软件工程（待填班级）
+**姓名拼音：** yangsihui
+**学号：** 202430224005
+**班级：** 24 级软件工程（01/02 班待确认）
 **小组组织：** [aaa-course-project](https://github.com/aaa-course-project)
 **小组代码仓库：** [aaa-course-project/pi-hunnu-2026](https://github.com/aaa-course-project/pi-hunnu-2026)
 
@@ -24,7 +24,7 @@
 
 ## 提交文案
 
-[`ISSUES.md`](ISSUES.md) 保存了五条课程 Issue 的标题与正文，可直接复制提交到课程仓库；提交前把标题里的 `[姓名拼音]` 替换成自己的姓名拼音。
+[`ISSUES.md`](ISSUES.md) 保存了五条课程 Issue 的标题与正文，可直接复制提交到课程仓库；提交前把标题里的 `[yangsihui]` 替换成自己的姓名拼音。
 
 ## 原始证据
 

@@ -1,7 +1,7 @@
 # 实践课2：组织建仓与源码分析
 
-**姓名拼音：** （待填）
-**学号：** （待填）
+**姓名拼音：** yangsihui
+**学号：** 202430224005
 **小组组织：** https://github.com/aaa-course-project
 **本人重点分析模块：** `packages/agent`（Agent 执行层）
 
