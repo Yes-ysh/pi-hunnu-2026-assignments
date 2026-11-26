@@ -47,7 +47,7 @@ c3cc91632d0a1950fb122605b190233f2aa0006e
 
 要点：`origin` 指向的是**小组组织** `aaa-course-project` 下的仓库，而不是教师组织 `hunnuOpenSourceSoftware2026`，也不是个人账号。仓库属于本次课程要求的小组组织。
 
-> 说明：本机 `hosts` 把 `github.com` 及其相关域名全部解析到 `127.0.0.1`，无法直连 GitHub。本次通过镜像入口完成 clone，`origin` 因此记录为镜像地址。教师组织的参考地址为 `https://github.com/hunnuOpenSourceSoftware2026/pi-hunnu-2026`。
+> 说明：本机 `hosts` 把 `github.com` 及其相关域名全部解析到 `127.0.0.1`，无法直连 GitHub。本次先用镜像入口把源码拉下来，再执行 `git remote set-url origin` 把远端改回小组组织的正式地址，因此 `git remote -v` 显示的是真实仓库 URL 而不是镜像地址。教师组织的参考地址为 `https://github.com/hunnuOpenSourceSoftware2026/pi-hunnu-2026`。
 
 ### 1.3 源码目录结构
 

@@ -195,7 +195,7 @@ Built packages\coding-agent\dist\bundle (84 files, 9.4 MiB)
 
 **排查：** 查看 `C:\Windows\System32\drivers\etc\hosts`，发现 `github.com`、`api.github.com`、`raw.githubusercontent.com` 等一批域名都被映射到 `127.0.0.1`；`Resolve-DnsName github.com` 返回 `127.0.0.1`，确认是 hosts 拦截而非网络故障。
 
-**解决：** 改用镜像入口完成 clone，本地 `origin` 记录为镜像地址；同时把真实仓库地址写进报告。
+**解决：** 先用镜像入口把源码拉下来，再执行 `git remote set-url origin https://github.com/aaa-course-project/pi-hunnu-2026.git` 把远端改回小组组织的正式地址，因此 `git remote -v` 显示的是真实 URL 而不是镜像地址。
 
 #### 困难 3：原生 HTTPS 报 `schannel: SEC_E_NO_CREDENTIALS`
 
