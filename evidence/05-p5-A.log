@@ -1,0 +1,11 @@
+﻿[P4] Agent 即将请求模型
+[P4] 工具结果已加入上下文
+[P4] Agent 即将请求模型
+`handoff.txt` 内容原样如下：
+
+```
+待办：补充 README 的启动说明
+启动命令：npm run demo -- --profile aaa-4821
+```
+
+(文件开头有一个 UTF-8 BOM 字符，其余文字如上。)
