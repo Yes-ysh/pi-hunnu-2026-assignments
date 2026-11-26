@@ -33,7 +33,7 @@
 
 插入后该行落在第 413 行。`streamAssistantResponse()` 在每次把当前上下文交给模型调用函数前都会走到这里。
 
-> **截图 S1：** 需自行截取编辑器中的文件名、行号，以及新增的 `[P4] Agent 即将请求模型` 和紧随其下的 `await streamFunction(...)`。
+> **截图 S1：** 编辑器中的文件名、行号，以及新增的 `[P4] Agent 即将请求模型` 和紧随其下的 `await streamFunction(...)`。
 
 ![S1](assets/p4-s1.png)
 
@@ -51,7 +51,7 @@
 
 插入后该行落在第 285 行。
 
-> **截图 S2：** 需自行截取 `for` 循环、`push(result)` 与紧接的 `[P4] 工具结果已加入上下文`。
+> **截图 S2：** `for` 循环、`push(result)` 与紧接的 `[P4] 工具结果已加入上下文`。
 
 ![S2](assets/p4-s2.png)
 
@@ -105,7 +105,7 @@ $LASTEXITCODE
 Built packages\coding-agent\dist\bundle (84 files, 9.4 MiB)
 ```
 
-> **截图 S3：** 需自行截取 `npm run build` 命令、构建结束回到提示符、以及 `$LASTEXITCODE` 为 `0`（可用 S3a/S3b 两张）。
+> **截图 S3：** `npm run build` 命令、构建结束回到提示符、以及 `$LASTEXITCODE` 为 `0`（可用 S3a/S3b 两张）。
 
 ![S3](assets/p4-s3a.png)
 
@@ -119,7 +119,7 @@ node .\packages\coding-agent\dist\cli.js
 
 两行 `[P4]` 日志写到**终端（stderr）**，会和 Pi 的交互界面混在一起，这是预期现象——日志走 `console.error`，界面走 stdout/终端渲染。
 
-> **截图 S4：** 需自行截取执行 `node .\packages\coding-agent\dist\cli.js` 的命令与成功打开的 Pi 界面。
+> **截图 S4：** 执行 `node .\packages\coding-agent\dist\cli.js` 的命令与成功打开的 Pi 界面。
 
 ![S4](assets/p4-s4.png)
 
@@ -175,7 +175,7 @@ Git 分支是一个指向某次提交的可移动指针，它让你从同一个�
 
 原因：模型直接凭自身知识回答，不需要访问本地文件，因此循环只走了一次"请求模型 → 得到最终回复 → 退出"。
 
-> **截图 S5：** 需自行截取会话 A 的输入指令、最终回复与实际出现的 `[P4]` 日志。
+> **截图 S5：** 会话 A 的输入指令、最终回复与实际出现的 `[P4]` 日志。
 
 ![S5](assets/p4-s5.png)
 
@@ -213,7 +213,7 @@ Git 分支是一个指向某次提交的可移动指针，它让你从同一个�
 [P4] Agent 即将请求模型          ← 第 2 轮：带着文件内容再次请求模型
 ```
 
-> **截图 S6：** 需自行截取会话 B 的输入指令、`read` 工具读取 `practice4.txt` 的记录、Pi 返回的实验代号，以及实际出现的两类 `[P4]` 日志（可分 S6a/S6b）。
+> **截图 S6：** 会话 B 的输入指令、`read` 工具读取 `practice4.txt` 的记录、Pi 返回的实验代号，以及实际出现的两类 `[P4]` 日志（可分 S6a/S6b）。
 
 ![S6](assets/p4-s6a.png)
 

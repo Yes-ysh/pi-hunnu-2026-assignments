@@ -19,7 +19,7 @@ npm   11.19.1
 git   git version 2.56.1.windows.1
 ```
 
-> **截图 S1：** 需自行截取当前终端显示这三个版本号的画面。
+> **截图 S1：** 当前终端显示这三个版本号的画面。
 
 ![S1](assets/p3-s1.png)
 
@@ -64,7 +64,7 @@ c3cc91632d0a1950fb122605b190233f2aa0006e
 
 后续所有安装与构建命令均在此仓库根目录执行。
 
-> **截图 S2：** 需自行截取包含当前目录、`git remote -v`、分支、commit 编号的终端画面。
+> **截图 S2：** 包含当前目录、`git remote -v`、分支、commit 编号的终端画面。
 
 ![S2](assets/p3-s2.png)
 
@@ -108,7 +108,7 @@ cd packages/telemetry && npm run build
 
 还要区分另一套配置：根 `tsconfig.json` 只服务 `npm run check` 的 `tsc --noEmit`，它把 `@earendil-works/*` 的 `paths` 指向 `packages/*/src/*.ts`（走源码）；而 `tsconfig.build.json` 把 `paths` 指向上游的 `dist/*.d.ts`（走产物）。所以 **`check` 不需要先 build，`build` 必须先 build 上游**。
 
-> **截图 S3：** 需自行截取 `engines.node` 与 `scripts.build` 的定义（可分两张）。
+> **截图 S3：** `engines.node` 与 `scripts.build` 的定义（可分两张）。
 
 ![S3](assets/p3-s3a.png)
 
@@ -139,7 +139,7 @@ found 0 vulnerabilities
 
 退出码 `0`，耗时约 1 分 7 秒。
 
-> **截图 S4：** 需自行截取 `npm install --ignore-scripts` 结束时的输出与退出码，要能区分「警告」与「导致失败的错误」。
+> **截图 S4：** `npm install --ignore-scripts` 结束时的输出与退出码，要能区分「警告」与「导致失败的错误」。
 
 ![S4](assets/p3-s4.png)
 
@@ -315,7 +315,7 @@ npm run build:offline
 
 它仍会重新编译相关包，但复用已有模型目录数据，跳过 `ai` 包的 codegen 联网步骤。
 
-> **截图 S5：** 需自行截取完整构建结束的最后一段输出、`$LASTEXITCODE` 为 `0`、`Test-Path` 为 `True`，以及通过本地路径运行得到的版本号。
+> **截图 S5：** 完整构建结束的最后一段输出、`$LASTEXITCODE` 为 `0`、`Test-Path` 为 `True`，以及通过本地路径运行得到的版本号。
 
 ![S5](assets/p3-s5.png)
 
@@ -373,7 +373,7 @@ npm run build:offline
 
 本次练习要证明"运行的是本地源码版本"，因此用 `pi-test.bat`；后续实践课4要观察编译产物中的日志，则用 `dist/cli.js`。
 
-> **截图 S6：** 需自行截取 `.\pi-test.bat` 启动命令、Pi 界面、自己发出的提示词与实际模型回复。**不要提交 API Key、`auth.json` 或授权回调地址。**
+> **截图 S6：** `.\pi-test.bat` 启动命令、Pi 界面、自己发出的提示词与实际模型回复。**不要提交 API Key、`auth.json` 或授权回调地址。**
 
 ![S6](assets/p3-s6.png)
 
