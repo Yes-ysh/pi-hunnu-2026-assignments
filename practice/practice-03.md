@@ -131,6 +131,8 @@ found 0 vulnerabilities
 
 退出码 `0`，耗时约 1 分 7 秒。
 
+> **截图 S4：** 需自行截取 `npm install --ignore-scripts` 结束时的输出与退出码，要能区分「警告」与「导致失败的错误」。
+
 ### 4.2 这条命令做了什么
 
 - 根据 `package.json` 与 `package-lock.json` 解析、下载依赖；锁文件与声明一致时使用锁定版本
