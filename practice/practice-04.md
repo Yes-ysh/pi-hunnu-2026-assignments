@@ -35,6 +35,8 @@
 
 > **截图 S1：** 需自行截取编辑器中的文件名、行号，以及新增的 `[P4] Agent 即将请求模型` 和紧随其下的 `await streamFunction(...)`。
 
+![S1](assets/p4-s1.png)
+
 ### 1.2 在工具结果加入上下文后打印日志
 
 原第 284 行 `currentContext.messages.push(result);`，在它**下方**插入一行。日志写在 `for` 循环内，每写入一条工具结果打印一次：
@@ -50,6 +52,8 @@
 插入后该行落在第 285 行。
 
 > **截图 S2：** 需自行截取 `for` 循环、`push(result)` 与紧接的 `[P4] 工具结果已加入上下文`。
+
+![S2](assets/p4-s2.png)
 
 ### 1.3 完整差异
 
@@ -103,6 +107,10 @@ Built packages\coding-agent\dist\bundle (84 files, 9.4 MiB)
 
 > **截图 S3：** 需自行截取 `npm run build` 命令、构建结束回到提示符、以及 `$LASTEXITCODE` 为 `0`（可用 S3a/S3b 两张）。
 
+![S3](assets/p4-s3a.png)
+
+![S3](assets/p4-s3b.png)
+
 ### 2.2 启动编译产物
 
 ```powershell
@@ -112,6 +120,8 @@ node .\packages\coding-agent\dist\cli.js
 两行 `[P4]` 日志写到**终端（stderr）**，会和 Pi 的交互界面混在一起，这是预期现象——日志走 `console.error`，界面走 stdout/终端渲染。
 
 > **截图 S4：** 需自行截取执行 `node .\packages\coding-agent\dist\cli.js` 的命令与成功打开的 Pi 界面。
+
+![S4](assets/p4-s4.png)
 
 ### 2.3 本次取证方式说明（重要）
 
@@ -167,6 +177,8 @@ Git 分支是一个指向某次提交的可移动指针，它让你从同一个�
 
 > **截图 S5：** 需自行截取会话 A 的输入指令、最终回复与实际出现的 `[P4]` 日志。
 
+![S5](assets/p4-s5.png)
+
 ### 3.2 会话 B：读取文件
 
 **输入指令（只给文件名，代号留在文件里）：**
@@ -202,6 +214,10 @@ Git 分支是一个指向某次提交的可移动指针，它让你从同一个�
 ```
 
 > **截图 S6：** 需自行截取会话 B 的输入指令、`read` 工具读取 `practice4.txt` 的记录、Pi 返回的实验代号，以及实际出现的两类 `[P4]` 日志（可分 S6a/S6b）。
+
+![S6](assets/p4-s6a.png)
+
+![S6](assets/p4-s6b.png)
 
 ### 3.3 两次会对比小结
 
