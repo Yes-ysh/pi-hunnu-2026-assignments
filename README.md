@@ -3,7 +3,7 @@
 **姓名：** 杨斯惠
 **姓名拼音：** yangsihui
 **学号：** 202430224005
-**班级：** 24 级软件工程（01/02 班待确认）
+**班级：** 24 级软件工程 01 班
 **小组组织：** [aaa-course-project](https://github.com/aaa-course-project)
 **小组代码仓库：** [aaa-course-project/pi-hunnu-2026](https://github.com/aaa-course-project/pi-hunnu-2026)
 
